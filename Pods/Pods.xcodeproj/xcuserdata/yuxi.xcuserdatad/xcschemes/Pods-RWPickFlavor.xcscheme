@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0730"
+   LastUpgradeVersion = "0700"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C2C356741D46C656007ABCD7"
-               BuildableName = "RWPickFlavor.framework"
-               BlueprintName = "RWPickFlavor"
-               ReferencedContainer = "container:RWPickFlavor.xcodeproj">
+               BlueprintIdentifier = "98D0DE056489074B42146C17128324E6"
+               BuildableName = "Pods_RWPickFlavor.framework"
+               BlueprintName = "Pods-RWPickFlavor"
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,26 +28,7 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C2C3567E1D46C656007ABCD7"
-               BuildableName = "RWPickFlavorTests.xctest"
-               BlueprintName = "RWPickFlavorTests"
-               ReferencedContainer = "container:RWPickFlavor.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C2C356741D46C656007ABCD7"
-            BuildableName = "RWPickFlavor.framework"
-            BlueprintName = "RWPickFlavor"
-            ReferencedContainer = "container:RWPickFlavor.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -64,10 +45,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C2C356741D46C656007ABCD7"
-            BuildableName = "RWPickFlavor.framework"
-            BlueprintName = "RWPickFlavor"
-            ReferencedContainer = "container:RWPickFlavor.xcodeproj">
+            BlueprintIdentifier = "98D0DE056489074B42146C17128324E6"
+            BuildableName = "Pods_RWPickFlavor.framework"
+            BlueprintName = "Pods-RWPickFlavor"
+            ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -79,15 +60,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C2C356741D46C656007ABCD7"
-            BuildableName = "RWPickFlavor.framework"
-            BlueprintName = "RWPickFlavor"
-            ReferencedContainer = "container:RWPickFlavor.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
