@@ -1,15 +1,25 @@
 PODS:
   - Alamofire (2.0.2)
+  - BetterBaseClasses (1.9.1):
+    - BetterBaseClasses/Constants (= 1.9.1)
+    - BetterBaseClasses/Controllers (= 1.9.1)
+    - BetterBaseClasses/Views (= 1.9.1)
+  - BetterBaseClasses/Constants (1.9.1)
+  - BetterBaseClasses/Controllers (1.9.1):
+    - BetterBaseClasses/Constants
+  - BetterBaseClasses/Views (1.9.1)
   - MBProgressHUD (0.9.2)
 
 DEPENDENCIES:
   - Alamofire (~> 2.0)
-  - MBProgressHUD (~> 0.9.1)
+  - BetterBaseClasses (~> 1.0)
+  - MBProgressHUD (~> 0.9.2)
 
 SPEC CHECKSUMS:
   Alamofire: 8edbab00802a752bb5240cc2abe70e7e881488ad
+  BetterBaseClasses: 57827f3d0754909f2e2e8b3eb8396a08b0caf4c8
   MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
 
-PODFILE CHECKSUM: 59c67f90bd6b8a23fc1b0f9003f2ad30e47e4595
+PODFILE CHECKSUM: b7cf07253abaa4f52bbaba8124642341445893c5
 
 COCOAPODS: 1.0.0.rc.2
