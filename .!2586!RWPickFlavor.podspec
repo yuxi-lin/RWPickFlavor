@@ -8,7 +8,7 @@ s.summary = "RWPickFlavor lets a user select an ice cream flavor."
 s.requires_arc = true
 
 # 2
-s.version = '0.2.3'
+s.version = ‘0.2.3’
 
 # 3
 s.license = { :type => "MIT", :file => "LICENSE" }
@@ -20,17 +20,3 @@ s.author = { "Yuxi Lin" => "yuxi.lin@mobileforming.com" }
 s.homepage = "https://github.com/yuxi-lin/RWPickFlavor.git"
 
 # 6 - Replace this URL with your own Git URL from "Quick Setup"
-s.source = { :git => "https://github.com/yuxi-lin/RWPickFlavor.git", :tag => "#{s.version}"}
-
-# 7
-s.framework = "UIKit"
-s.dependency 'Alamofire', '~> 2.0'
-s.dependency 'BetterBaseClasses', '~> 1.0'
-s.dependency 'MBProgressHUD', '~> 0.9.2'
-
-# 8
-s.source_files = "RWPickFlavor/**/*.{swift}"
-
-# 9
-s.resources = "RWPickFlavor/**/*.{png,jpeg,jpg,storyboard,xib}"
-end

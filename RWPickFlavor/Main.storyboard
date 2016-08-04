@@ -18,9 +18,6 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="FYu-FJ-7gm">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
-                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HDe-ty-26z" userLabel="contentView">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="336"/>
                                 <subviews>
@@ -129,14 +126,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="zft-ym-2ni" secondAttribute="bottom" id="42i-PO-p8G"/>
-                            <constraint firstAttribute="trailing" secondItem="FYu-FJ-7gm" secondAttribute="trailing" id="7qu-RV-SDi"/>
-                            <constraint firstItem="FYu-FJ-7gm" firstAttribute="leading" secondItem="3Oz-Zq-ubG" secondAttribute="leading" id="CX7-ws-9Uy"/>
                             <constraint firstItem="HDe-ty-26z" firstAttribute="leading" secondItem="3Oz-Zq-ubG" secondAttribute="leading" id="EzQ-6k-lSM"/>
                             <constraint firstAttribute="trailing" secondItem="HDe-ty-26z" secondAttribute="trailing" id="F3f-bn-ZgI"/>
                             <constraint firstItem="zft-ym-2ni" firstAttribute="leading" secondItem="3Oz-Zq-ubG" secondAttribute="leading" id="Pqc-OF-E8m"/>
                             <constraint firstItem="HDe-ty-26z" firstAttribute="top" secondItem="sRg-If-22K" secondAttribute="bottom" id="Y6l-My-6YZ"/>
-                            <constraint firstItem="MIH-OU-SkA" firstAttribute="top" secondItem="FYu-FJ-7gm" secondAttribute="bottom" id="h5j-M3-rZr"/>
-                            <constraint firstItem="FYu-FJ-7gm" firstAttribute="top" secondItem="sRg-If-22K" secondAttribute="bottom" id="plx-FH-gRw"/>
                             <constraint firstAttribute="trailing" secondItem="zft-ym-2ni" secondAttribute="trailing" id="qtF-sB-2Rp"/>
                             <constraint firstItem="zft-ym-2ni" firstAttribute="top" secondItem="HDe-ty-26z" secondAttribute="bottom" id="uZO-ce-mNC"/>
                         </constraints>
@@ -179,7 +172,4 @@
             <point key="canvasLocation" x="105" y="380"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="background.jpg" width="800" height="800"/>
-    </resources>
 </document>

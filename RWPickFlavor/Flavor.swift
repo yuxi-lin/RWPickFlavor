@@ -19,7 +19,7 @@ struct Flavor {
   // MARK: Static Methods
   
   static func vanilla() -> Flavor {
-    return Flavor(name:"Vanilla", topColor:RGB(251, green: 248, blue: 236), bottomColor:RGB(230, green: 215, blue: 171))
+    return Flavor(name:"CAKE BATTER", topColor:RGB(251, green: 248, blue: 236), bottomColor:RGB(230, green: 215, blue: 171))
   }
   
   static func chocolate() -> Flavor {
