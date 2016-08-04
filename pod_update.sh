@@ -104,7 +104,7 @@ fi
 echo " "
 echo ' ~~~ pushing podspec to spec repo ~~~ '
 echo " "
-echo $(pod repo push "$podSpecRepo" "$podspecFilename")
+echo $(pod repo push --allow-warnings "$podSpecRepo" "$podspecFilename")
 echo " "
 echo 'Done'
 echo " "
