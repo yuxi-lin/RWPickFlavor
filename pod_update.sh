@@ -99,27 +99,24 @@
   echo " "
   echo ' ~~~ checking podspec ~~~ '
   echo " "
-  lintVomit=$(pod lib lint)
-  echo "$lintVomit"
+  lintResult=$(pod lib lint)
+  echo "$lintResult"
   
-  grep -q "ERROR" <<< $lintVomit
+# Check for ERROR in lint result
+  grep -q "ERROR" <<< $lintResult
   if [ $? -eq 0 ]
   then
     echo " "
-    echo "didn't work, will exit"
+    echo "*** ERROR: podspec did not pass validation because of errors"
+    echo "podspec file will not be pushed, script is exiting"
+    echo " "
     exit 1
   else
+    echo " "
     echo "*** WARNING: podspec did not pass vaidation because of warnings (no errors)"
     echo "if your podspec has public/private dependencies, this may be expected"
     read -p "Press any key to continue; ctrl+c to exit"
   fi
-
-#   if [ $? -ne 0 ]
-#   then
-#     echo "*** ERROR: podspec did not pass vaidation."
-#     echo "if your podspec has public/private dependencies, this may be expected"
-#     read -p "Press any key to continue; ctrl+c to exit"
-#   fi
 
 # Push to Git
   git push origin master --tags
@@ -133,4 +130,3 @@
   echo 'Done'
   echo " "
   exit 0
-
