@@ -101,7 +101,7 @@
   echo " "
   read lintVomit <<< $(pod lib lint)
   
-  echo "$lintVomit | grep "ERROR""
+  $lintVomit | grep "ERROR"
   if [ $? -eq 0 ]
   then
     echo " "
