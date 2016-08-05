@@ -100,6 +100,10 @@
   echo ' ~~~ checking podspec ~~~ '
   echo " "
   pod lib lint
+  
+  lintVomit = $?
+
+  echo $lintVomit
 
   if [ $? -ne 0 ]
   then

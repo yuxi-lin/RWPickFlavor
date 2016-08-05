@@ -8,7 +8,7 @@ s.summary = "RWPickFlavor lets a user select an ice cream flavor."
 s.requires_arc = true
 
 # 2
-s.version = '0.2.16'
+s.version = '0.2.17'
 
 # 3
 s.license = { :type => "MIT", :file => "LICENSE" }
