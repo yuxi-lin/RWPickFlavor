@@ -18,7 +18,7 @@ public class PickFlavorViewController: BaseViewController, UICollectionViewDeleg
   var flavors: [Flavor] = [] {
     
     didSet {
-      pickFlavorDataSource?.flavors = flavors
+//      pickFlavorDataSource?.flavors = flavors
     }
   }
   
