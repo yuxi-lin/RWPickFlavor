@@ -100,6 +100,7 @@
   echo ' ~~~ checking podspec ~~~ '
   echo " "
   lintVomit=$(pod lib lint)
+  echo "$lintVomit"
   
   echo $lintVomit | grep "ERROR"
   if [ $? -eq 0 ]
