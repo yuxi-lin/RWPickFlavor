@@ -99,10 +99,8 @@
   echo " "
   echo ' ~~~ checking podspec ~~~ '
   echo " "
-  pod lib lint
+  read lintVomit <<< $(pod lib lint)
   
-  echo " "
-  lintVomit=$?
 
   echo $lintVomit
 
