@@ -101,12 +101,16 @@
   echo " "
   read lintVomit <<< $(pod lib lint)
   
-  grep "ERROR" $lintVomit
+  echo $lintVomit | grep "ERROR"
   if [ $? -eq 0 ]
   then
     echo " "
     echo "didn't work, will exit"
     exit 1
+  else
+    echo "*** WARNING: podspec did not pass vaidation because of warnings (no errors)"
+    echo "if your podspec has public/private dependencies, this may be expected"
+    read -p "Press any key to continue; ctrl+c to exit"
   fi
 
 #   if [ $? -ne 0 ]
@@ -116,15 +120,15 @@
 #     read -p "Press any key to continue; ctrl+c to exit"
 #   fi
 
-# # Push to Git
-#   git push origin master --tags
+# Push to Git
+  git push origin master --tags
 
-# # Push the Podspec
-#   echo " "
-#   echo ' ~~~ pushing podspec to spec repo ~~~ '
-#   echo " "
-#   echo $(pod repo push --allow-warnings "$podSpecRepo" "$podspecFilename")
-#   echo " "
+# Push the Podspec
+  echo " "
+  echo ' ~~~ pushing podspec to spec repo ~~~ '
+  echo " "
+  echo $(pod repo push --allow-warnings "$podSpecRepo" "$podspecFilename")
+  echo " "
   echo 'Done'
   echo " "
   exit 0
