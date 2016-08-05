@@ -102,7 +102,7 @@
   lintVomit=$(pod lib lint)
   echo "$lintVomit"
   
-  grep "ERROR" <<< $lintVomit
+  grep -q "ERROR" <<< $lintVomit
   if [ $? -eq 0 ]
   then
     echo " "
