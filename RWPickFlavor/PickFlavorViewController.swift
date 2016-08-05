@@ -46,7 +46,7 @@ public class PickFlavorViewController: BaseViewController, UICollectionViewDeleg
   private func loadFlavors() {
     
     showLoadingHUD()  // <-- Add this line
-    
+    print("hi")
     // 1
     Alamofire.request(
       .GET, "http://www.raywenderlich.com/downloads/Flavors.plist",
