@@ -99,7 +99,7 @@
   echo " "
   echo ' ~~~ checking podspec ~~~ '
   echo " "
-  read lintVomit <<< $(pod lib lint)
+  lintVomit=$(pod lib lint)
   
   echo $lintVomit | grep "ERROR"
   if [ $? -eq 0 ]
