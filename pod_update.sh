@@ -101,7 +101,8 @@
   echo " "
   pod lib lint
   
-  lintVomit = $?
+  echo " "
+  lintVomit=$?
 
   echo $lintVomit
 
