@@ -27,7 +27,7 @@ class PickFlavorDataSource: NSObject, UICollectionViewDataSource {
   // MARK: UICollectionViewDataSource
   
   func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-    return flavors.count
+//    return flavors.count
   }
   
   func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
