@@ -104,9 +104,10 @@
   echo $lintVomit | grep "ERROR"
   if [ $? -eq 0 ]
   then
-    echo 
-
-  echo "LINT VOMIT"$lintVomit
+    echo " "
+    echo "didn't work, will exit"
+    exit 1
+  fi
 
 #   if [ $? -ne 0 ]
 #   then
